@@ -55,7 +55,7 @@ def ProcessLoanAgreements(myblob: func.InputStream, outputDocument: func.Out[fun
                                connection="STORAGE_CONNECTION_STRING") 
 @app.cosmos_db_output(arg_name="outputDocument",
                       database_name="ContosoDB",
-                      container_name="LoanForms",
+                      container_name="LoanForm",
                       connection="COSMOS_CONNECTION_STRING")
 def ProcessLoanForms(myblob: func.InputStream, outputDocument: func.Out[func.Document]):
     """
